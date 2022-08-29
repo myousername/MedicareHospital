@@ -15,7 +15,7 @@ body{
 }
 
 #appointment-bar {
-	background-color: #d3ffbf;
+	background-color: burlywood;
 	color: #000000;
 	height: 8vh;
 	font-weight: 800;
@@ -23,6 +23,10 @@ body{
     align-items: center;
     position: relative;
     font-size: 3vh;
+}
+
+#appointment-bar a{
+  color: antiquewhite;
 }
 
 #appointment a{
@@ -49,13 +53,13 @@ body{
 	align-items: center;
 	position: relative;
 	margin-left: 3vw;
-    height: 15vh;
+    height: 14vh;
 }
 
 #hamburger-icon{
     display: none;
     cursor: pointer;
-    background-color: #0bf3ad;
+    background-color: blueviolet;
     position: relative;
     margin-left: auto;
     margin-right: 3vw;
@@ -85,15 +89,19 @@ body{
 
 
 .heading{
-	font-size: 6vh;
+	font-size: 2rem;
 	font-weight: 600;
 	text-transform: capitalize;
-    color: #0bf3ad;
+    color: blueviolet;
+}
+
+#primary-heading{
+  font-size: 2.5em;
 }
 
 .heading a{
 	padding: 0px 25px 0px 0px;
-	color: #0bf3ad;
+	color: blueviolet;
 	padding-left: 5px;
 }
 
@@ -104,8 +112,8 @@ nav{
 
 #mobile-menu{
     list-style: none;
-    background-color: #0bf3ad;
-    height: 80vh;
+    background-color: blueviolet;
+    height: 70vh;
     position: relative;
     padding: 0;
     display: none;
@@ -129,8 +137,8 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    height: 11.4vh;
-    font-size: 5vh;
+    height: 9.97vh;
+    font-size: 3vmax;
     width: 100%;
     text-align: center;
     border-bottom: 1px solid white;
@@ -141,7 +149,7 @@ li a{
     font-weight: bold;
 }
 ul li:hover{
-    background-color: orange;
+    background-color: burlywood;
     cursor: pointer;
 }
 /*#nav-wrapper{
@@ -150,7 +158,7 @@ ul li:hover{
 }*/
 #nav-wrapper  ul{
     list-style: none;
-    background-color: #0bf3ad;
+    background-color: blueviolet;
 	height: 10vh;
     display: flex;
     align-items: center;
@@ -166,14 +174,14 @@ ul li:hover{
 }
 
 #nav-wrapper > a:hover{
-	background-color: #e0a81b;
+	background-color: burlywood;
 }
 
 .slideshow-container{
-    height: 40vw;
+    height: 40vmax;
     width: 85%;
     position: relative;
-    margin-top: 15vh;
+    margin-top: 9vh;
     margin-left: auto;
     margin-right: auto;
 }
@@ -245,9 +253,9 @@ ul li:hover{
 
 .box{
     cursor: pointer;
-    height: 2vw;
-    width: 2vw;
-    margin: 0 0.5vw;
+    height: 2vmax;
+    width: 2vmax;
+    margin: 0 0.5vmax;
     border: 2px inset black;
     transition: background-color 0.6s ease;
 }
@@ -281,28 +289,27 @@ ul li:hover{
 	margin: auto;
 }
 
-.description{
+#description{
 	font-size: 1.4em;
 	text-align: justify;
-	text-justify: inter-word;
 }
 
 #button-container{
 	display: flex;
-    width: 100%;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 #button-container button{
-	background-color: #0bf3ad;
+	background-color: blueviolet;
 	width: 15vw;
     height: 10vh;
     text-align: center;
 	text-decoration: none;
 	color: #ffffff;
 	transition-duration: 0.4s;
-	border: 1px solid orange;
+	border: 1px solid blueviolet;
 	font-size: 1.4em;
     margin-bottom: 2vh;
 }
@@ -338,6 +345,11 @@ ul li:hover{
 	padding-left: 20px;
 }
 
+#departments-container{
+  background-color: aliceblue;
+  padding: 3vmax 0 3vmax 0;
+}
+
 #departments{
     margin: 8vh 2vw 6vh 2vw;
     display: grid;
@@ -350,6 +362,7 @@ ul li:hover{
     overflow: hidden;
     margin: 0 auto;
     position: relative;
+    opacity: 0.7;
 }
 #departments img{
     width: 100%;
@@ -359,18 +372,16 @@ ul li:hover{
 #departments p{
     width: 100%;
     background-color: #111111;
-    opacity: 0.7;
     position: absolute;
     top: 75%;
     text-align: center;
     color: #ffffff;
-    font-size: 1.2em;
+    font-size: 1.15em;
 }
 #departments div:hover img{
-    cursor: pointer;
     transform: scale(1.25);
 }
-#departments div:hover p{
+#departments div:hover{
     cursor: pointer;
     opacity: 1;
 }
@@ -389,7 +400,7 @@ ul li:hover{
 }
 .doctor{
     height: 80%;
-    border: 2px solid #0bf3ad;
+    border: 2px solid blueviolet;
     position: absolute;
     text-align: center;
 }
@@ -1337,7 +1348,7 @@ ul li:hover{
     height: 0.5vmin;
     width: 90%;
     margin: 1vmin 5% 1vmin 5%;
-    background-color: #0bf3ad;
+    background-color: blueviolet;
 }
 #doctor-buttons{
     margin-top: 1.5vmin;
@@ -1376,7 +1387,7 @@ ul li:hover{
     padding: 3vmin;
     font-size: 3.9vmin;
     color: #222222;
-    border: 4px outset blue;
+    border: 4px outset blueviolet;
     font-weight: bold;
     font-style: oblique;
     position: relative;
@@ -1413,13 +1424,13 @@ ul li:hover{
     height: 12px;
     width: 12px;
     border-radius: 50%;
-    background-color: rgb(0, 247, 255);
+    background-color: blueviolet;
 }
 .dot:hover{
     cursor: pointer;
 }
 .dot:hover, .dot.active{
-    background-color: blue;
+    background-color: burlywood;
 }
 
 
@@ -1538,14 +1549,14 @@ ul li:hover{
         margin-top: 3vh;
     }
     #button-container button{
-        background-color: #0bf3ad;
+        background-color: blueviolet;
         width: 18vw;
         height: 11vh;
         text-align: center;
         text-decoration: none;
         color: #ffffff;
         transition-duration: 0.4s;
-        border: 1px solid orange;
+        border: 1px solid blueviolet;
         font-size: 1.4em;
     }
 }
@@ -1553,6 +1564,23 @@ ul li:hover{
 @media(min-width: 501px) and (max-width: 989px){
     .hidden-mobile{
         display: none;
+    }
+    #appointment-bar{
+      height: 11vh;
+    }
+    .slideshow-container{
+      width: 100%;
+      margin-top: 1vh;
+    }
+    #info{
+      margin: 1vh 1vw 1vh 1vw;
+      width: 98%;
+    }
+    #button-container{
+      justify-content: center;
+    }
+    #button-container button{
+      margin-right: 2vw;
     }
     #doctor1{
         animation: sm-animation1 linear 60s infinite;
@@ -1597,11 +1625,8 @@ ul li:hover{
         float: left;
         height: 260px;
     }
-    .heading a{
-        font-size: 8vw;
-    }
     #dept-heading p{
-        font-size: 8vw;
+        font-size: 1.2em;
     }
     #heading{
         margin-top: 3vh;
@@ -1613,14 +1638,14 @@ ul li:hover{
         display: block;
     }
     #button-container button{
-        background-color: #0bf3ad;
+        background-color: blueviolet;
         width: 33vw;
         height: 11vh;
         text-align: center;
         text-decoration: none;
         color: #ffffff;
         transition-duration: 0.4s;
-        border: 1px solid orange;
+        border: 1px solid blueviolet;
         font-size: 1.2em;
     }
     #testimonials-container{
@@ -1646,6 +1671,32 @@ ul li:hover{
     .hidden-mobile{
         display: none;
     }
+    #appointment-bar{
+      height: 11vh;
+    }
+    .slideshow-container{
+      width: 100%;
+      margin-top: 1vh;
+    }
+    #info{
+      margin: 1vh 1vw 1vh 1vw;
+      width: 98%;
+    }
+    #button-container{
+      justify-content: center;
+    }
+    #button-container button{
+      margin-right: 2vw;
+    }
+    #info2{
+      flex-direction: column;
+      width: 100%;
+    }
+    #info2 img{
+      width: 80%;
+      height: 25vmax;
+      margin: 1vh auto 2vh auto ;
+    }
     #departments{
         grid-template-columns: 1fr;
         grid-auto-rows: minmax(250px,auto);
@@ -1653,9 +1704,6 @@ ul li:hover{
     .ql-vs{
         width: 100%;
         height: 260px;
-    }
-    .heading a{
-        font-size: 8vw;
     }
     #dept-heading p{
         font-size: 8vw;
@@ -1667,14 +1715,14 @@ ul li:hover{
         display: block;
     }
     #button-container button{
-        background-color: #0bf3ad;
+        background-color: blueviolet;
         width: 33vw;
         height: 11vh;
         text-align: center;
         text-decoration: none;
         color: #ffffff;
         transition-duration: 0.4s;
-        border: 1px solid orange;
+        border: 1px solid blueviolet;
         font-size: 1.2em;
     }
     .doctor{
@@ -1731,7 +1779,7 @@ ul li:hover{
 
 #footer{
     width: 100%;
-    background-color: rgb(82, 81, 81);
+    background-color: #000;
     padding: 5vh 2vw 2vh 2vw;
 }
 #quick-links, #address{
@@ -1746,14 +1794,14 @@ ul li:hover{
     text-align: center;
     font-weight: 600;
     font-family: 'Lora', serif;
-    color: #0bf3ad;
+    color: blueviolet;
 }
 #quick-links a{
     color: #ffffff;
     
 }
 #quick-links a:hover{
-    color: #0bf3ad;
+    color: blueviolet;
 }
 #address p{
     color: white;

@@ -23,11 +23,11 @@ function display(num){
         the society better.";
         imageSource="Images/photo-1596541223130-5d31a73fb6c6.jfif";
     } else if(num == 2){
-        printText = "<h2 style=\"color: blue;\">Our Mission</h2>To provide comprehensive and compassionate\
+        printText = "<h2 style=\"color: blueviolet;\">Our Mission</h2>To provide comprehensive and compassionate\
         patient care at affordable cost with clinical excellance and state of the art technology.";
         imageSource="Images/our_mission.jpg";
     } else if(num == 3){
-        printText = "<h2 style=\"color: blue;\">Our Vision</h2>To be an epitome of trusted health care.";
+        printText = "<h2 style=\"color: blueviolet;\">Our Vision</h2>To be an epitome of trusted health care.";
         imageSource="Images/our_vision.jfif";
     } else {
         printText = "Free Medical Health Checkup Camps are organised regularly at Hospital & Periphery.\
@@ -49,7 +49,7 @@ function display(num){
     document.getElementById("message").innerHTML = printText;
     document.getElementById("image").src = imageSource;
     clearInterval(id);
-    id = setInterval(fade,80);             
+    id = setInterval(fade,50);             
     function fade(){
         if (Number(element.style.opacity) < 1){
             element.style.opacity = Number(element.style.opacity) + 0.1;
